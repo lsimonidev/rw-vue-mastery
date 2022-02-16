@@ -1,5 +1,5 @@
 <template>
-  <div class="event-details">
+  <div v-if="event" class="event-details">
     <h1>{{ event.title }}</h1>
     <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
     <p>{{ event.description }}</p>
@@ -11,10 +11,10 @@ import EventService from '@/services/EventService'
 
 export default {
   name: 'EventDetails',
+  props: ['id'],
   data() {
     return {
       event: null,
-      id: 123,
     }
   },
 
