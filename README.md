@@ -1,4 +1,4 @@
-# rw-vue-mastery
+# Real World Vue 3 - vuemastery.com course
 
 ## Project setup
 ```
